@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>AnimeMatrix | Subscribe</title>
+</head>
+<body id="home">
+  <header class="hero forums top">
+    <div id="navbar" class="navbar">
+      <h1 class="logo">
+       <span class="text-primary"><i class="fas fa-dice-d20"></i> Anime</span>Matrix
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="forums.html#forum">Forum</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>AnimeMatrix Value</h1>
+      
+
+    </div>
+  </header>
+
+  <main>
+   <section class="post">
+     <h2>Subscription</h2>
+     <h2>By Subscribing you earn money for watching anime</h2>
+            <p>AnimeMatrix contains a ticketing system which consist of technology that targets your account dircetly. The more you stream on our website or application the more we pay you.</p>
+            <p class="meta">
+              <i class="fas fa-user"><strong> John Broaddus</strong> <em>AnimeMatrix C.T.O</em> | June 15th 2020</i>
+            </p>
+            <img src="./images/forum/mai.png" alt="">
+   </section>
+  </main>
+
+  
+
+<footer class="footer bg-dark">
+<div class="social">
+  <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+  <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+  <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+</div>
+<div>Copyright &copy; 2021 - AnimeMatrix - Official Licensed Product - HiDevEngine! <i class="fas fa-heart"></i></div>
+</footer>  
+<script>
+  const navbar = document.getElementById('navbar');
+  let scrolled = false;
+  
+  window.onscroll = function() {
+    if(window.pageYOffset > 100) {
+      navbar.classList.remove('top');
+      if (!scrolled) {
+        navbar.style.transform = 'translateY(-70px)';
+      }
+      setTimeout(function() {
+        navbar.style.transform = 'translateY(0)';
+        scrolled = true;
+      }, 250)
+    } else {
+      navbar.classList.add('top')
+      scrolled = false;
+    }
+  }
+</script>
+</body>
+
+</html>

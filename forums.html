@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>AnimeMatrix | Forums</title>
+</head>
+<body id="home">
+  <header class="hero forums">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+       <span class="text-primary"><i class="fas fa-dice-d20"></i> Anime</span>Matrix
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="#blog">Forum</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1>AnimeMatrix Forums</h1>
+      
+
+    </div>
+  </header>
+
+  <section class="flex-columns">
+    <div class="row">
+
+      <div class="column">
+        <div class="column-2 forum bg-light">
+          <h4>Submit to AnimeMatrix Forums</h4>
+            <p>To submit to our forums click the contact button and include your name and contact information.</p>
+              <a href="index.html#contact" class="btn btn-outline">
+                <i class="fas fa-chevron-right"></i> Contact
+              </a>
+          </div>
+        </div>
+
+
+    </div>
+  </section>
+
+
+  <main>
+    <!-- Forums -->
+  <article class="forums flex-columns">
+    <div class="row">
+      <div class="column">
+        <div class="column-1">
+          <img src="./images/forum/forum1.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-2 bg-light">
+          <h2>How does AnimeMatrix differ from crunchyroll?</h2>
+            <p>As anime fans, AnimeMatrix has catered to our own needs as well as our audiences. Crunchy Roll is also a respectable anime streaming wesbites although it does not include an offline desktop application where users are able to download anime for offline use. </p>
+            <p class="meta">
+              <i class="fas fa-user"><strong> John Broaddus</strong> <em>AnimeMatrix C.T.O</em> | June 15th 2020</i>
+            </p>
+  
+              <a href="post.html" class="btn btn-outline">
+                <i class="fas fa-chevron-right"></i> Subscribe
+              </a>
+          </div>
+        </div>
+
+
+    </div>
+  </article>
+
+  <article class="forums flex-columns flex-reverse">
+    <div class="row">
+      <div class="column">
+        <div class="column-1">
+          <img src="./images/forum/forum2.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-2 bg-light">
+          <h2>Is It true AnimeMatrix has an open source API?</h2>
+            <p>AnimeMatrix is the lead operative in anime as of June, 2021. It is true we have an API, although it's not open source yet. With minor attention to detail, hardwork, and dedication, we will be releasing AnimeMatrix's open source API by September, 2021.</p>
+            <p class="meta">
+              <i class="fas fa-user"><strong> Marie Baker</strong> <em>Software Engineer</em> | June 9th 2020</i>
+            </p>
+  
+              <a href="post.html" class="btn btn-outline">
+                <i class="fas fa-chevron-right"></i> Subscribe
+              </a>
+          </div>
+        </div>
+
+
+    </div>
+  </article>
+
+  <article class="forums flex-columns">
+    <div class="row">
+      <div class="column">
+        <div class="column-1">
+          <img src="./images/forum/forum3.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="column-2 bg-light">
+          <h2>What is the purpose of the Forums Page?</h2>
+            <p>On this webpage, we take your questions and have someone in design, achitecture, development, quality control, or service answer your question directly pertaining to the nature of the question asked. We answer outright directly and have a response time of approximately 24 hours. Whatever your question is we will get back to you. AnimeMatrix was created by anime fans for anime fans and we leave no question unanswered.</p>
+            <p class="meta">
+              <i class="fas fa-user"><strong> Avith Stargazer</strong> <em>AnimeMatrix C.E.O</em> | June 2nd 2020</i>
+            </p>
+  
+              <a href="post.html" class="btn btn-outline">
+                <i class="fas fa-chevron-right"></i> Subscribe
+              </a>
+          </div>
+        </div>
+
+
+    </div>
+  </article>
+  </main>
+
+  
+
+<footer class="footer bg-dark">
+<div class="social">
+  <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+  <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+  <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+</div>
+<div>Copyright &copy; 2021 - AnimeMatrix - Official Licensed Product - HiDevEngine! <i class="fas fa-heart"></i></div>
+</footer>  
+<script>
+  const navbar = document.getElementById('navbar');
+  let scrolled = false;
+  
+  window.onscroll = function() {
+    if(window.pageYOffset > 100) {
+      navbar.classList.remove('top');
+      if (!scrolled) {
+        navbar.style.transform = 'translateY(-70px)';
+      }
+      setTimeout(function() {
+        navbar.style.transform = 'translateY(0)';
+        scrolled = true;
+      }, 250)
+    } else {
+      navbar.classList.add('top')
+      scrolled = false;
+    }
+  }
+</script>
+</body>
+
+</html>
